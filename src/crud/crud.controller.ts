@@ -7,7 +7,7 @@ export class CrudController {
         return "Find All Data"
     }
     
-    @Get()
+    @Get(":id")
     findOneData(){ 
         return "Find One Data"
     }
@@ -17,12 +17,12 @@ export class CrudController {
         return "Send Data"
     }
     
-    @Put()
+    @Put(":id")
     editData(){
         return "Edit Data"
     }
 
-    @Delete()
+    @Delete("id")
     deleteData() {
         return "Delete user data"
     }
